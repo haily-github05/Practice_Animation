@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+
 public class GameManager : MonoBehaviour
 {
     public Canvas GameMenu;
@@ -44,4 +45,11 @@ public class GameManager : MonoBehaviour
             SceneManager.GetActiveScene().name
         );
     }
+
+    public void EnterNextScene()
+    {
+        Debug.Log("Enter button clicked!");
+        SceneManager.LoadScene("_Scene_1");
+    }
+
 }
